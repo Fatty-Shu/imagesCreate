@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="font-size:100px;">
     <head>
         <meta name="layout" content="main">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
@@ -55,6 +55,13 @@
                 padding: 0px;
                 overflow: visible;                
             }
+            .main{
+                position: relative;
+                max-width: 720px;
+                height: auto; 
+                margin:0 auto;
+                overflow: hidden;
+            }
             #area{
                 position: relative;
                 width: 100%;
@@ -97,6 +104,7 @@
                 border-radius: 8px;
                 text-align: center;
                 font-weight: bolder;
+                cursor: pointer;
             }
             .creat_area{
                 position: absolute;
@@ -160,29 +168,29 @@
             }
             .creat_area>a>img{
                 width: 100%;
+                max-width: 720px;
                 height: auto;
             }
         </style>
     </head>
     <body>
-        <div id="area">
-            <img src="images/top.jpg">
-            <div class="username">预约人：<span>驴迹导游</span></div>
-            <img src="images/bottom.jpg">
-        </div> 
-        <div></div>
-        <div class="creat_area">
-            <a class="logo" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.t20000.lvji" >
-                <img src="images/logo.png" alt="">
-            </a>
-            <div class="img_show">
-                
+        <div class="main">
+            <div id="area">
+                <img src="images/top.jpg">
+                <div class="username">预约人：<span>驴迹导游</span></div>
+                <img src="images/bottom.jpg">
+            </div> 
+            <div></div>
+            <div class="creat_area">
+
+                <div class="img_show">
+                    
+                </div>
+                <p>预约iphone7 高端黑！</p>
+                <input type="text" placeholder="请输入预约人的姓名">
+                <div class="example1" >立即生成</div>
             </div>
-            <p>预约iphone7 高端黑！</p>
-            <input type="text" placeholder="请输入预约人的姓名">
-            <div class="example1" >立即生成</div>
         </div>
-        
      
     </body>
 </html>
